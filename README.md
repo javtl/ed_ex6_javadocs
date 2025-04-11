@@ -21,3 +21,5 @@ comentar el método según devuelva o establezca
 
 Sí devuelve: `@return`
 Sí establece: `@param`
+
+![esto es una captura de pantalla de eclipse](images/Captura%20de%20pantalla%20Eclipse.png)
