@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"ed_ex6_javadocs","l":"example"}];updateSearchResults();
