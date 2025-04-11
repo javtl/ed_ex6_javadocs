@@ -3,7 +3,12 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
-
+/**
+ * 
+ * esta clase representa un carril bici
+ *  @author JAVI
+ *  @version 1.1
+ */
 public class CarrilBiciManager {
 
     private final Map<String, Double> tramos; // nombre del tramo -> longitud en km
@@ -42,11 +47,17 @@ public class CarrilBiciManager {
         }
         return estadoTramos.get(nombre);
     }
-
+/**
+ * este metodo devuelve la longuitud total
+ * @return
+ */
     public double longitudTotal() {
         return tramos.values().stream().mapToDouble(Double::doubleValue).sum();
     }
-
+/**
+ * este metodo devuleve la obtención de tramos
+ * @return
+ */
     public Map<String, Double> obtenerTramos() {
         return Collections.unmodifiableMap(tramos);
     }
@@ -59,6 +70,13 @@ public class CarrilBiciManager {
               .append(tramos.get(nombre)).append(" km): ")
               .append(estadoTramos.get(nombre)).append("\n");
         }
+        
+        /**
+         * 
+         * aquí devuelve sb.toString()
+         * @return
+         */
+        
         sb.append("Longitud total: ").append(longitudTotal()).append(" km\n");
         return sb.toString();
     }
